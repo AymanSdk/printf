@@ -18,7 +18,7 @@ int _printf(const char *format, ...);
 
 
 /* format handler */
- int handler(const char *format, va_list args);
+int format_handler(char specif, va_list args);
 
 
 /* print functions */
@@ -27,7 +27,8 @@ int print_string(va_list args);
 int print_percent(va_list args);
 
 /* function to get the correct function to print */
-int (*get_print_func(const char *s))(va_list args);
+
+
 
 /* helper functions */
 int _putchar(char c);

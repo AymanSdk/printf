@@ -7,40 +7,29 @@
  */
 int _printf(const char *format, ...)
 {
+	int i = 0;
 	int printed_chars = 0;
 	va_list args;
 
+	if (!format || (format[0] == '%' && !format[1]))
+		return (-1);
+	if (format[0] == '%' && format[1] == ' ' && !format[2])
+		return (-1);
+
 	va_start(args, format);
 
-	while (*format != '\0')
+	while (format && format[i])
 	{
-		if (*format == '%')
+		if (format[i] == '%')
 		{
-			format++;
-			if (*format == 'c')
-			{
-				printed_chars += print_char(args);
-			}
-			else if (*format == 's')
-			{
-				printed_chars += print_string(args);
-			}
-			else if (*format == '%')
-			{
-				printed_chars += print_percent(args);
-			}
-			else
-			{
-				_putchar('%');
-				printed_chars++;
-			}
+			i++;
+			printed_chars += format_handler(format[i], args);
 		}
 		else
 		{
-			_putchar(*format);
-			printed_chars++;
+			printed_chars += _putchar(format[i]);
 		}
-		format++;
+		i++;
 	}
 	va_end(args);
 	return (printed_chars);
