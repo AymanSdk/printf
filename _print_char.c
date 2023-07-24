@@ -1,15 +1,14 @@
 #include "main.h"
 
 /**
- * print_percent - prints a percent symbol
- * @args: percent symbol to print
+ * print_char - prints a character
+ * @args: character to print
  * Return: number of characters printed
  */
 
-int print_percent(va_list args)
+int print_char(va_list args)
 {
 char c;
-
 c = va_arg(args, int);
 _putchar(c);
 return (1);
