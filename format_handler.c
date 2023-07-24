@@ -11,18 +11,18 @@
 
 int format_handler(char specif, va_list args)
 {
-    int printed_chars = 0;
+int printed_chars = 0;
 
-    if (specif == '%')
-        printed_chars += _putchar('%');
-    else if (specif == 'c')
-        printed_chars += _putchar(va_arg(args, int));
-    else if (specif == 's')
-        printed_chars += print_string(args);
-     else
-     {
-        printed_chars += _putchar('%');
-        printed_chars += _putchar(specif);
-     }
-     return (printed_chars);
+if (specif == '%')
+printed_chars += _putchar('%');
+else if (specif == 'c')
+printed_chars += _putchar(va_arg(args, int));
+else if (specif == 's')
+printed_chars += print_string(args);
+else
+{
+printed_chars += _putchar('%');
+printed_chars += _putchar(specif);
+}
+return (printed_chars);
 }
