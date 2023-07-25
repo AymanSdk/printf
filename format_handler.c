@@ -1,14 +1,12 @@
 #include "main.h"
 #include <stdarg.h>
 
-
 /**
  * format_handler - handle the format specifier for _printf
  * @specif : format specifier
  * @args : list of arguments
  * Return: Number of printed characters
  */
-
 int format_handler(char specif, va_list args)
 {
 int printed_chars = 0;
