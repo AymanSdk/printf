@@ -20,12 +20,9 @@ int format_handler(char specif, va_list args);
 int print_string(va_list args);
 int print_int(int n);
 int print_binary(unsigned int n);
-<<<<<<< HEAD
-int print_uint(unsigned int n);"
-=======
+int print_uint(unsigned int n);
 int print_octa(unsigned int n);
 
->>>>>>> 7c0c3166cb41c4467ce39e024b08aea999d9c6f1
 
 
 

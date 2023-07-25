@@ -23,13 +23,10 @@ else if (specif == 'd' || specif == 'i')
 printed_chars += print_int(va_arg(args, int));
 else if (specif == 'b')
 printed_chars += print_binary(va_arg(args, unsigned int));
-<<<<<<< HEAD
-else if (specif += 'u')
+else if (specif == 'u')
 printed_chars += print_uint(va_arg(args, unsigned int));
-=======
 else if (specif == 'o')
 printed_chars += print_octa(va_arg(args, unsigned int));
->>>>>>> 7c0c3166cb41c4467ce39e024b08aea999d9c6f1
 else
 {
 printed_chars += _putchar('%');
