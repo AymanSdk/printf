@@ -19,6 +19,8 @@ else if (specif == 'c')
 printed_chars += _putchar(va_arg(args, int));
 else if (specif == 's')
 printed_chars += print_string(args);
+else if (specif == 'd' || specif == 'i')
+printed_chars += print_int(va_arg(args, int));
 else
 {
 printed_chars += _putchar('%');

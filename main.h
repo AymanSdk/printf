@@ -18,6 +18,7 @@ int format_handler(char specif, va_list args);
 /* print functions */
 
 int print_string(va_list args);
+int print_int(int n);
 
 
 
