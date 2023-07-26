@@ -1,6 +1,6 @@
 # printf-like Functions Project
 
-![Project Logo](project_logo.png) <!-- If you have a logo, add it here -->
+![Project Logo](_printf.png) <!-- If you have a logo, add it here -->
 
 Welcome to the printf-like Functions project! This project is a group effort by Aymane Sadiki and Ghita Bounouara. The aim of this project is to create a custom implementation of printf-like functions in [language], allowing users to format and print output in a flexible and customizable way.
 
