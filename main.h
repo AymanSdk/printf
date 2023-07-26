@@ -23,7 +23,6 @@ int print_int(int n);
 int print_binary(unsigned int n);
 int print_uint(unsigned int n);
 int print_octa(unsigned int n);
-int print_hexa(unsigned int n);
 int print_HEXA(unsigned int n);
 
 
