@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_hexa - prints an unsigned integer in hexadecimal
+ * print_HEXA - prints an unsigned integer in HEXADIMCIMAL
  * @n: The unsigned integer to print
  * Return: number of printed chars
  */
-int print_hexa(unsigned int n)
+int print_HEXA(unsigned int n)
 {
 	char hexa[12];
 	int counter = 0;
@@ -24,7 +24,7 @@ int print_hexa(unsigned int n)
 		if (rem < 10)
 			hexa[i] = rem + '0';
 		else
-			hexa[i] = rem + 'a';
+		hexa[i] = rem + 'A';
 		n /= 16;
 		i++;
 	}
