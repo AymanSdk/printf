@@ -25,6 +25,8 @@ else if (specif == 'u')
 printed_chars += print_uint(va_arg(args, unsigned int));
 else if (specif == 'o')
 printed_chars += print_octa(va_arg(args, unsigned int));
+else if (specif == 'x')
+printed_chars += print_hexa(va_arg(args, unsigned int));
 else
 {
 printed_chars += _putchar('%');
